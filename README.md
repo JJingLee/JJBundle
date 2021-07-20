@@ -16,27 +16,27 @@ To run the example project, clone the repo, and run `pod install` from the Examp
   Created by chiehchun.lee on 2021/4/21.
   
 */
-##1. Create bundle and put resource into the bundle by cocoapods.
+## 1. Create bundle and put resource into the bundle by cocoapods.
 in .podspec
-'''
+```ruby
 s.resource_bundles = {
   '_bundleName' => ['[framework]/Assets/**/*','[framework]/**/*.{js}']
 }
-'''
+```
 
-##2. Create your project's Bundle DSL,
-'''
+## 2. Create your project's Bundle DSL,
+```ruby
 public extension Bundle {
     static var myBundle : JKOBundleDSL? {
         return JKOBundleDSL(mainBundleName: "_bundleName", anyClassNameInSameBundle: "_bundleName._bundleNameViewController")
     }
 }
-'''
+```
 
-##3. Use your bundle through DSL
-'''
+## 3. Use your bundle through DSL
+```ruby
 Bundle.myBundle?.main?.fetchJSScript(with: fileName)
-'''
+```
 
 ## Requirements
 
