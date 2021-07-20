@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import JJBundle
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let testJS = Bundle.myBundle?.main?.fetchJSScript(with: "test")
+        print("\(testJS)")
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,3 +26,8 @@ class ViewController: UIViewController {
 
 }
 
+extension Bundle {
+    static var myBundle : JJBundleDSL? {
+        return JJBundleDSL(mainBundleName: "JJBundle", anyClassNameInSameBundle: "JJBundle.JJBundleDSL")
+    }
+}

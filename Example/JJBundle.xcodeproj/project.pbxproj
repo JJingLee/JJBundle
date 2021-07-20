@@ -28,10 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		20FB7431499E00B830BE7983 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		313ACFEB29F84FC8990DA3A9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		20FB7431499E00B830BE7983 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		313ACFEB29F84FC8990DA3A9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		45B1C184CD582203E95C0989 /* Pods_JJBundle_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJBundle_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		56666083F89AC446D0BDF1D7 /* JJBundle.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JJBundle.podspec; path = ../JJBundle.podspec; sourceTree = "<group>"; };
+		56666083F89AC446D0BDF1D7 /* JJBundle.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JJBundle.podspec; path = ../JJBundle.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* JJBundle_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJBundle_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -156,7 +156,6 @@
 				F2FC3F93FFEEC42352785F0A /* Pods-JJBundle_Tests.debug.xcconfig */,
 				DB3780BD222EB34D6780A2E5 /* Pods-JJBundle_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
